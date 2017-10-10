@@ -4,9 +4,6 @@ import pprint
 import re
 
 def readtxtNumber(file):
-#https://codereview.stackexchange.com/questions/126363/shortest-regex-search-and-sum-for-integers
-#http://www.pythonforbeginners.com/basics/list-comprehensions-in-python        
-        
         
         with open(file, 'r') as f:
                 result = sum(int(value) for value in re.findall('[0-9]+', f.read()))
